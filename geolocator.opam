@@ -1,0 +1,17 @@
+opam-version: "1.2"
+version: "0.1.0"
+maintainer: "fabian.bonk@bonkii.com"
+authors: ["Fabian Bonk"]
+homepage: "https://github.com/Reperator/geolocator"
+bug-reports: "https://github.com/Reperator/geolocator/issues"
+dev-repo: "git://github.com/Reperator/geolocator.git"
+license: "LGPL"
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "core"
+  "csv"
+  "jbuilder" {build & >= "1.0+beta14"}
+]
+available: [ocaml-version >= "4.04.0"]

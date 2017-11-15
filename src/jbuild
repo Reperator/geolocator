@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(executable
+ ((name geolocator)
+  (public_name geolocator)
+  (modes (native))
+  (libraries (core csv))))
