@@ -56,7 +56,7 @@ let run blocks location addresses =
       |> loop2 location)
 
 let command =
-  basic ~summary:"get coordinates for IP addresses"
+  basic_spec ~summary:"get coordinates for IP addresses" ?readme:None
     Spec.(
       empty
       +> anon ("blocks" %: file)
